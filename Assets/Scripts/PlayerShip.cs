@@ -86,6 +86,7 @@ public class PlayerShip : MonoBehaviour
         animator.enabled = false;
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
+        TaggleLazers(false);
         Invoke(nameof(ReloadGame), 2f);
     }
 
@@ -98,19 +99,22 @@ public class PlayerShip : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            foreach (GameObject lazer in lazers)
-            {
-                var emission = lazer.GetComponent<ParticleSystem>().emission;
-                emission.enabled = true;
-            }
+            TaggleLazers(true);
         }
         else
         {
-            foreach (GameObject lazer in lazers)
-            {
-                var emission = lazer.GetComponent<ParticleSystem>().emission;
-                emission.enabled = false;
-            }
+            TaggleLazers(false);
+        }
+    }
+
+    void TaggleLazers(bool isActive)
+    {
+        foreach (GameObject lazer in lazers)
+        {
+            var emission = lazer.GetComponent<ParticleSystem>().emission;
+            emission.enabled = isActive;
         }
     }
 }
+
+
