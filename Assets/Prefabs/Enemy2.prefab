@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1404724577958374
+--- !u!1 &1917106948373238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4530302269161020}
-  - component: {fileID: 33134760360706414}
-  - component: {fileID: 23545005152539550}
-  - component: {fileID: 8324693590544001730}
-  - component: {fileID: 83055866}
-  - component: {fileID: 83055868}
+  - component: {fileID: 4288594156929110}
+  - component: {fileID: 33073823830031208}
+  - component: {fileID: 23841016204486338}
+  - component: {fileID: 5533582021986911421}
+  - component: {fileID: 898419090405791935}
   m_Layer: 0
-  m_Name: Enemy1
+  m_Name: Enemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4530302269161020
+--- !u!4 &4288594156929110
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404724577958374}
+  m_GameObject: {fileID: 1917106948373238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
@@ -36,21 +35,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &33134760360706414
+--- !u!33 &33073823830031208
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404724577958374}
-  m_Mesh: {fileID: 5813333945735601801, guid: b3f31988fa57e6448857f14a9607ca49, type: 3}
---- !u!23 &23545005152539550
+  m_GameObject: {fileID: 1917106948373238}
+  m_Mesh: {fileID: -3801321870449612203, guid: 741053bc327354845884391aa7b7bc7e, type: 3}
+--- !u!23 &23841016204486338
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404724577958374}
+  m_GameObject: {fileID: 1917106948373238}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,26 +85,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8324693590544001730
+--- !u!65 &5533582021986911421
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404724577958374}
+  m_GameObject: {fileID: 1917106948373238}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.014648, y: 2.8077502, z: 2.8669968}
-  m_Center: {x: -0.030517578, y: -0.000005722046, z: -3.90868}
---- !u!114 &83055866
+  m_Size: {x: 9.60827, y: 1.7607899, z: 12.307949}
+  m_Center: {x: 0, y: -0.00001564622, z: 0}
+--- !u!114 &898419090405791935
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404724577958374}
+  m_GameObject: {fileID: 1917106948373238}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ca54a44d7248b046bc8a9341f059bfc, type: 3}
@@ -114,19 +113,6 @@ MonoBehaviour:
   HitVFX: {fileID: 198175801688348628, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4, type: 3}
   DeathVFX: {fileID: 198917022394846920, guid: edda945e985d91744af8e78065935ad4, type: 3}
   DeathVFXParent: {fileID: 0}
-  deathScore: 10
+  deathScore: 20
   explosionsSizeFactor: 1
-  hitpoints: 2
---- !u!65 &83055868
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404724577958374}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.7085571, y: 1.1765747, z: 7.8814783}
-  m_Center: {x: -0.052734375, y: -0.3944931, z: 1.4845243}
+  hitpoints: 5
