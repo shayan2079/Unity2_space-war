@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [DisallowMultipleComponent]
 public class PlayerShip : MonoBehaviour
@@ -17,6 +18,12 @@ public class PlayerShip : MonoBehaviour
     [SerializeField] float zRotationFactorDueToInput = 40f;
 
     [SerializeField] GameObject[] lazers;
+    [SerializeField] ParticleSystem explosionVFX;
+
+    bool isLevelReloading = false;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +33,10 @@ public class PlayerShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessInputs();
+        if (!isLevelReloading)
+        {
+            ProcessInputs();
+        }
     }
 
     private void ProcessInputs()
@@ -67,11 +77,27 @@ public class PlayerShip : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 270 + yRotationDueToPos, zRotationDueToInput);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //death sequence
+        isLevelReloading = true;
+        explosionVFX.Play();
+        Animator animator = this.GetComponentInParent<Animator>();
+        animator.enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
+        Invoke(nameof(ReloadGame), 2f);
+    }
+
+    void ReloadGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     void ProcessLazersInput()
     {
         if (Input.GetButton("Fire1"))
         {
-            print("FFFFFF");
             foreach (GameObject lazer in lazers)
             {
                 var emission = lazer.GetComponent<ParticleSystem>().emission;
