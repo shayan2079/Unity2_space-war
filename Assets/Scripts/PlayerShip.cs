@@ -20,6 +20,8 @@ public class PlayerShip : MonoBehaviour
     [SerializeField] GameObject[] lazers;
     [SerializeField] ParticleSystem explosionVFX;
 
+    AudioSource audioSource;
+
     PauseController pauseController;
 
     bool isLevelReloading = false;
@@ -27,6 +29,7 @@ public class PlayerShip : MonoBehaviour
     private void Start()
     {
         pauseController = FindObjectOfType<PauseController>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -81,6 +84,7 @@ public class PlayerShip : MonoBehaviour
         //death sequence
         isLevelReloading = true;
         explosionVFX.Play();
+        audioSource.Play();
         Animator animator = this.GetComponentInParent<Animator>();
         animator.enabled = false;
         GetComponent<MeshRenderer>().enabled = false;

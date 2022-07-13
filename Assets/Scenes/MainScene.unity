@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5c1e21cc4ef0cb7449d9c9f56f533dad,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -907,12 +908,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1071454002}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1088657170 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4359250416872032237, guid: 79db0c197e4624542b03a73b38a2a552,
-    type: 3}
-  m_PrefabInstance: {fileID: 6699303005687664604}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869083254 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6864655714656258480, guid: 480be411fb3cf0f4580e458dad0fb110,
@@ -1102,36 +1097,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 230669154, guid: 79db0c197e4624542b03a73b38a2a552, type: 3}
-      propertyPath: m_Name
-      value: Panel
-      objectReference: {fileID: 0}
-    - target: {fileID: 230669154, guid: 79db0c197e4624542b03a73b38a2a552, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1328890449, guid: 79db0c197e4624542b03a73b38a2a552, type: 3}
-      propertyPath: resumeButton
-      value: 
-      objectReference: {fileID: 1088657170}
-    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
+    - target: {fileID: 4359250415793523290, guid: 79db0c197e4624542b03a73b38a2a552,
         type: 3}
-      propertyPath: m_Interactable
-      value: 1
+      propertyPath: m_SizeDelta.x
+      value: -1664.8845
       objectReference: {fileID: 0}
-    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
+    - target: {fileID: 4359250415793523290, guid: 79db0c197e4624542b03a73b38a2a552,
         type: 3}
-      propertyPath: m_Colors.m_DisabledColor.b
-      value: 0.017354928
-      objectReference: {fileID: 0}
-    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.g
-      value: 0.017354928
-      objectReference: {fileID: 0}
-    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.r
-      value: 0.735849
+      propertyPath: m_SizeDelta.y
+      value: -977.8094
       objectReference: {fileID: 0}
     - target: {fileID: 6699303005948982809, guid: 79db0c197e4624542b03a73b38a2a552,
         type: 3}
