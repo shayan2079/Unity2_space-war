@@ -190,6 +190,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6864655714957442498, guid: 480be411fb3cf0f4580e458dad0fb110,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 6864655716477525328, guid: 480be411fb3cf0f4580e458dad0fb110,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 480be411fb3cf0f4580e458dad0fb110, type: 3}
 --- !u!4 &38019375 stripped
@@ -264,6 +274,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &148851371 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4014601059788360051, guid: 8d95ecc37757ce24195df8f1e09894e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4014601058850374998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &150574600 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5427648325617800067, guid: 853a1761863466144bfa559cbf0219e4,
@@ -277,6 +293,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2110793826}
     m_Modifications:
+    - target: {fileID: 3822459204968523278, guid: 54cad8e502099a846a497d720a85ee1d,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     - target: {fileID: 3822459205723174913, guid: 54cad8e502099a846a497d720a85ee1d,
         type: 3}
       propertyPath: m_RootOrder
@@ -337,6 +358,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wave3-2
       objectReference: {fileID: 0}
+    - target: {fileID: 4142125293395923215, guid: 54cad8e502099a846a497d720a85ee1d,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 5675291335050968684, guid: 54cad8e502099a846a497d720a85ee1d,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54cad8e502099a846a497d720a85ee1d, type: 3}
 --- !u!4 &227713720 stripped
@@ -436,6 +467,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2110793826}
     m_Modifications:
+    - target: {fileID: 3822459204968523278, guid: 54cad8e502099a846a497d720a85ee1d,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     - target: {fileID: 3822459205723174913, guid: 54cad8e502099a846a497d720a85ee1d,
         type: 3}
       propertyPath: m_RootOrder
@@ -496,6 +532,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wave3
       objectReference: {fileID: 0}
+    - target: {fileID: 4142125293395923215, guid: 54cad8e502099a846a497d720a85ee1d,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 5675291335050968684, guid: 54cad8e502099a846a497d720a85ee1d,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54cad8e502099a846a497d720a85ee1d, type: 3}
 --- !u!4 &623748519 stripped
@@ -517,6 +563,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2110793826}
     m_Modifications:
+    - target: {fileID: 2839978218498531893, guid: c6949ab3c9be529438da12e1f998b42f,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     - target: {fileID: 8740788547166901900, guid: c6949ab3c9be529438da12e1f998b42f,
         type: 3}
       propertyPath: m_Name
@@ -671,6 +722,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2110793826}
     m_Modifications:
+    - target: {fileID: 294852125927643981, guid: db0f688adfd68a8448d0479363c476b3,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 294852126024720969, guid: db0f688adfd68a8448d0479363c476b3,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 603575898831329679, guid: db0f688adfd68a8448d0479363c476b3,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     - target: {fileID: 603575899803198074, guid: db0f688adfd68a8448d0479363c476b3,
         type: 3}
       propertyPath: m_Name
@@ -752,6 +818,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2110793826}
     m_Modifications:
+    - target: {fileID: 294852125927643981, guid: db0f688adfd68a8448d0479363c476b3,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 294852126024720969, guid: db0f688adfd68a8448d0479363c476b3,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
+    - target: {fileID: 603575898831329679, guid: db0f688adfd68a8448d0479363c476b3,
+        type: 3}
+      propertyPath: DeathVFXParent
+      value: 
+      objectReference: {fileID: 148851371}
     - target: {fileID: 603575899803198074, guid: db0f688adfd68a8448d0479363c476b3,
         type: 3}
       propertyPath: m_Name
@@ -825,6 +906,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 603575899803198074, guid: db0f688adfd68a8448d0479363c476b3,
     type: 3}
   m_PrefabInstance: {fileID: 1071454002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1088657170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4359250416872032237, guid: 79db0c197e4624542b03a73b38a2a552,
+    type: 3}
+  m_PrefabInstance: {fileID: 6699303005687664604}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869083254 stripped
 GameObject:
@@ -1014,6 +1101,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 230669154, guid: 79db0c197e4624542b03a73b38a2a552, type: 3}
+      propertyPath: m_Name
+      value: Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 230669154, guid: 79db0c197e4624542b03a73b38a2a552, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1328890449, guid: 79db0c197e4624542b03a73b38a2a552, type: 3}
+      propertyPath: resumeButton
+      value: 
+      objectReference: {fileID: 1088657170}
+    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.017354928
+      objectReference: {fileID: 0}
+    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.017354928
+      objectReference: {fileID: 0}
+    - target: {fileID: 4359250416872032235, guid: 79db0c197e4624542b03a73b38a2a552,
+        type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.735849
+      objectReference: {fileID: 0}
     - target: {fileID: 6699303005948982809, guid: 79db0c197e4624542b03a73b38a2a552,
         type: 3}
       propertyPath: m_Pivot.x

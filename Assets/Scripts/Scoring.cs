@@ -6,6 +6,8 @@ using TMPro;
 public class Scoring : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI scoreBoard;
+    [SerializeField] TextMeshProUGUI pauseMenuScoreBoard;
+
     int score = 0;
     // Start is called before the first frame update
     void Start()
@@ -18,5 +20,6 @@ public class Scoring : MonoBehaviour
     {
         score += scoreToAdd;
         scoreBoard.text = $"Score: {score}";
+        pauseMenuScoreBoard.text = $"YOUR SCORE IS: {score}";
     }
 }

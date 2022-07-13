@@ -20,14 +20,13 @@ public class PlayerShip : MonoBehaviour
     [SerializeField] GameObject[] lazers;
     [SerializeField] ParticleSystem explosionVFX;
 
+    PauseController pauseController;
+
     bool isLevelReloading = false;
 
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        pauseController = FindObjectOfType<PauseController>();
     }
 
     // Update is called once per frame
@@ -87,12 +86,12 @@ public class PlayerShip : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<BoxCollider>().enabled = false;
         TaggleLazers(false);
-        Invoke(nameof(ReloadGame), 2f);
+        Invoke(nameof(LoadEndMenu), 2f);
     }
 
-    void ReloadGame()
+    void LoadEndMenu()
     {
-        SceneManager.LoadScene(0);
+        pauseController.LoadEndMenu();
     }
 
     void ProcessLazersInput()
